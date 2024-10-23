@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fbb040;
+  --color-secondary: steelblue;
+  /* Definir um valor */
+  --color-tertiary: #855D21;
+  --color-font-01: #42446e;
+  --color-gradient-01: linear-gradient(to left, rebeccapurple, steelblue, turquoise);
+
+  /* ----------------------- */
+  /* fonte */
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+
+.container-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.c-hover:hover {
+  color: var(--color-primary);
+  font-size: 1.05rem;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--color-tertiary);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+  box-shadow: none;
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--color-tertiary);
+}
+
+.apresentacao {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.apresentacao_home_ola {
+  color: var(--font-cor-01);
+}
+
+
+.gradient {
+  background-image: var(--color-gradient-01);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-apresentacao {
+  border-radius: 50%;
+  border: 5px solid white;
+  /* Borda interna branca */
+  padding: 5px;
+  /* Para criar espaço entre a imagem e o gradiente */
+  background: conic-gradient(from 180deg,
+      rebeccapurple,
+      steelblue,
+      turquoise,
+      rebeccapurple);
+}
+
+.tecnologias{
+  color: var(--color-font-01);
+}
+
+.tecnologias h2{
+  text-transform: uppercase;
+}
+
+.tech-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+.bg-footer-css {
+  background-color: var(--color-font-01);
+  color: var(--color-font-01);
+}
+
+[data-bs-theme="dark"] {
+  color: #fff;
+
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .accordion-item,
+  .btn {
+    --bs-nav-link-color: #fff;
+    --bs-card-color: #fff;
+    --bs-offcanvas-color: #fff;
+    --bs-accordion-color: #fff;
+    --bs-body-color: #fff;
+  }
+}
